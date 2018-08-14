@@ -1,0 +1,22 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.header {
+  height: 100vh;
+  background-image: url(../img/hero.jpg);
+  background-size: cover; }
+  .header:after {
+    position: fixed;
+    top: -100%;
+    left: -50%;
+    width: 300%;
+    height: 300%;
+    content: '';
+    -webkit-animation: grain 1s steps(10) infinite;
+    animation: grain 1s steps(10) infinite;
+    opacity: .48;
+    background-image: url(../img/grains.png); }

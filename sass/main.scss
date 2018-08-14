@@ -1,0 +1,48 @@
+html, body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.header{
+  height: 100vh;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+
+  &:after{
+    animation: grain 1s steps(10) infinite;
+    -webkit-animation: grain 1s steps(10) infinite;
+    background-image: url(../img/grains.png);
+    content: '';
+    height: 300%;
+    left: -50%;
+    opacity: 0.48;
+    position: fixed;
+    top: -100%;
+    width: 300%;
+  }
+}
+
+@keyframes grain{
+  0%, 100% {
+    transform: translate(0,0)  ;
+    -webkit-transform: translate(0,0)  ;
+    -moz-transform: translate(0,0)  ;
+    -ms-transform: translate(0,0)  ;
+    -o-transform: translate(0,0)  ;
+}
+10%{
+  transform: translate(-5%, -10%);
+  -webkit-transform: translate(-5%, -10%);
+  -moz-transform: translate(-5%, -10%);
+  -ms-transform: translate(-5%, -10%);
+  -o-transform: translate(-5%, -10%);
+}
+20%{
+  transform: translate(-15%, 5%);
+  -webkit-transform: translate(-15%, 5%);
+  -moz-transform: translate(-15%, 5%);
+  -ms-transform: translate(-15%, 5%);
+  -o-transform: translate(-15%, 5%);
+}
+}
