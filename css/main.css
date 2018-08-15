@@ -20,6 +20,23 @@ body {
     animation: grain 1s steps(10) infinite;
     opacity: .48;
     background-image: url(../img/grains.png); }
+  .header .content {
+    font-family: Poppins;
+    position: absolute;
+    z-index: 1;
+    top: 36px;
+    left: 44%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff; }
+    .header .content h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 0;
+      color: #8300f7; }
 
 @keyframes grain {
   0%,

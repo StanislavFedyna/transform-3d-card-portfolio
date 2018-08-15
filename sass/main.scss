@@ -10,7 +10,6 @@ body {
   height: 100vh;
   background-image: url(../img/hero.jpg);
   background-size: cover;
-  
   &:after {
     animation: grain 1s steps(10) infinite;
     -webkit-animation: grain 1s steps(10) infinite;
@@ -23,6 +22,28 @@ body {
     top: -100%;
     width: 300%;
   }
+  & .content {
+    position: absolute;
+    top: 36px;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: Poppins;
+    z-index: 1;
+
+    & h1{
+      font-weight: 700;
+      font-size: 48px;
+      margin-bottom: 0;
+      color: #8300f7;
+      
+    }
+  }
+
 }
 
 @keyframes grain {
