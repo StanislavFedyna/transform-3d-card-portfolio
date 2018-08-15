@@ -11,15 +11,14 @@ body {
   background-size: cover; }
   .header:after {
     position: fixed;
-    top: -100%;
+    top: -110%;
     left: -50%;
     width: 300%;
     height: 300%;
     content: '';
-    -webkit-animation: grain 1s steps(10) infinite;
     animation: grain 1s steps(10) infinite;
     opacity: .48;
-    background-image: url(../img/grains.png); }
+    background-image: url(grains.png); }
   .header .content {
     font-family: Poppins;
     position: absolute;
@@ -37,6 +36,20 @@ body {
       font-weight: 700;
       margin-bottom: 0;
       color: #8300f7; }
+    .header .content p {
+      font-weight: lighter;
+      width: 80%;
+      margin-top: 0; }
+    .header .content .btn {
+      margin-top: 64px; }
+      .header .content .btn a {
+        font-size: 12px;
+        padding: 16px 42px;
+        text-decoration: none;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #fff;
+        border: 2px solid #fff; }
 
 @keyframes grain {
   0%,
@@ -100,3 +113,12 @@ body {
     -ms-transform: translate(-10%, 10%);
     -o-transform: translate(-10%, 10%);
     transform: translate(-10%, 10%); } }
+
+.delay-1 {
+  animation-delay: 2s; }
+
+.delay-2 {
+  animation-delay: 2.2s; }
+
+.delay-3 {
+  animation-delay: 2.4s; }
